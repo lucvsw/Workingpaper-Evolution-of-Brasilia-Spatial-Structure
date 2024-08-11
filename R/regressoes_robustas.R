@@ -1,3 +1,4 @@
+# Estes são os códigos para as regressões da tabela "Table A2: Robustness tests for Density and Urbanization Gradients in Brasília: 2015."
 # Dados georreferenciados de Brasília
 url <- "https://raw.githubusercontent.com/lucvsw/mestrado_ucb/main/dados/bsb_new_data_painel.xlsx"
 temp_file <- tempfile(fileext = ".xlsx")
