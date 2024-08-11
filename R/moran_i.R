@@ -1,3 +1,5 @@
+# Comentários: código para a reprodução da "Figure 5: The Formation of Clusters in the Metropolitan Region of Brasília between 1975 and 2015."
+
 library(ggplot2)
 library(sf)
 library(raster)
