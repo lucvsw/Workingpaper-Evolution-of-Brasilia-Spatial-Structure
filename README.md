@@ -15,3 +15,5 @@ Built from scratch in 1960, Brasília currently ranks as the fourth-largest urba
 ## Data
 
 The data used in this paper is obtained from the Global Human Settlement Layer (GHSL). GHSL provides raster data of global spatial information describing human presence on the planet. Population data of Brasília is obtained from the GHS-POP dataset provided by the GHSL, which depicts the spatial distribution of the residential population expressed as the number of people per grid cell of 1km by 1km (or 100 hectares). We also utilize the GHS-BUILT-S dataset, which provides an estimate of the urbanized area per each 1 km² grid cell. Both datasets are for the period between 1975 and 2015, using 5-year intervals. More information about the data [here](https://github.com/lucvsw/Workingpaper-Evolution-of-Brasilia-Spatial-Structure/blob/main/R/manipulation.R).
+
+## [Download this Working Paper](https://drive.google.com/file/d/1f71vfzotxYVtRuWbpun4HhlNRXr1TAOf/view?usp=drive_link).
