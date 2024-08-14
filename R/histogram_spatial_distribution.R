@@ -1,4 +1,4 @@
-### Histograma para 2015 - Área urbana
+# Esses são os código para criação de "Figure 4: Changes in the Spatial Distribution of the Population and Urban Area of Brasília"
 # Vetores com os anos
 anos <- c(1975, 2015)
 
@@ -93,7 +93,7 @@ combined_plot <- ggplot(combined_data, aes(x = dist_f, y = percent, fill = year)
   labs(x = "Distance (km)",
        y = "Percentage per ring",
        title = NULL,
-       subtitle = "Urbanized area's distribution, 1975-2015") +
+       subtitle = "4B. Urbanized area's distribution, 1975-2015") +
   theme_cowplot()
 combined_plot
 
@@ -109,7 +109,7 @@ combined_plot_pop <- ggplot(combined_data_pop, aes(x = dist_f, y = percent, fill
   labs(x = "Distance (km)",
        y = "Percentage per ring",
        title = NULL,
-       subtitle = "Population's distribution, 1975-2015") +
+       subtitle = "4D. Population's distribution, 1975-2015") +
   theme_cowplot()
 combined_plot_pop
 
@@ -122,7 +122,7 @@ pop_variation_plot2015 <- ggplot(pop_variation_result, aes(x = dist_f, y = prop_
   labs(x = "Distance (km)",
        y = NULL,
        title = NULL,
-       subtitle = "Population's growth, 1975-2015") +
+       subtitle = "4C. Population's growth, 1975-2015") +
   theme_cowplot()
 pop_variation_plot2015
 
@@ -132,7 +132,7 @@ area_variation_plot2015 <- ggplot(area_variation_result, aes(x = dist_f, y = pro
   labs(x = "Distance (km)",
        y = NULL,
        title = NULL,
-       subtitle = "Urbanized area's growth, 1975-2015 ") +
+       subtitle = "4A. Urbanized area's growth, 1975-2015 ") +
   theme_cowplot()
 area_variation_plot2015
 
