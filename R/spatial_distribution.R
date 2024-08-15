@@ -13,7 +13,7 @@ library(gridExtra)
 
 # Dados georreferenciados de Brasília
 
-url <- "https://raw.githubusercontent.com/lucvsw/mestrado_ucb/main/dados/bsb_new_data_painel.xlsx"
+url <- "https://raw.githubusercontent.com/lucvsw/Workingpaper-Evolution-of-Brasilia-Spatial-Structure/main/data/bsb_new_data_painel.xlsx"
 temp_file <- tempfile(fileext = ".xlsx")
 GET(url, write_disk(temp_file, overwrite = TRUE))
 
@@ -32,7 +32,7 @@ bsb_2015 <- bsb_painel %>%
 # Shapefile das regiões administrativas
 
 # URLs para os arquivos do shapefile no GitHub
-base_url <- "https://raw.githubusercontent.com/lucvsw/mestrado_ucb/main/dados/regioes_administrativas/"
+base_url <- "https://raw.githubusercontent.com/lucvsw/Workingpaper-Evolution-of-Brasilia-Spatial-Structure/main/data/regioes_administrativas/"
 files <- c("regioes_administrativas.shp",
            "regioes_administrativas.shx",
            "regioes_administrativas.dbf",
@@ -128,7 +128,7 @@ dens_map2015 <- criar_mapa(bsb_2015, "pop", "2D. Brasília: Population Density, 
 urb_map2015 <- criar_mapa(bsb_2015, "total_hec", "2B. Brasília: Urbanized Area, 2015", "Urbanized Area", show_legend = FALSE)
 
 # Mapas da área de tombamento
-CBD_bsb <- data.frame(x = -4686183.065074, y = -1943368.445251)
+CBD_bsb <- data.frame(x = -4686183.065074, y = -1943368.445251) # ponto do CBD
 criar_mapa_tombamento <- function(data, fill_var, title, fill_name, fill_limits = NULL) {
   ggplot() +
     geom_raster(aes(x = x, y = y, fill = !!sym(fill_var)), data = data) +
